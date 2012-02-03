@@ -5,10 +5,10 @@
 		<script type="text/javascript">
 		function start() {
 			$("#output").html("");
-			// http://stackoverflow.com/questions/1155678/javascript-string-newline-character
 			var template = $("#template").val()
 			var s = $("#source").val()
 			var sep = $("#delimiter").val()
+			// http://stackoverflow.com/questions/1155678/javascript-string-newline-character
 			var universalNewline = /\r\n|\r|\n/g;
 			var a = s.split(universalNewline);
 			for(var i in a){
